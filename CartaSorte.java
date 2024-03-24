@@ -13,7 +13,7 @@ public class CartaSorte {
 	private String restricao;
 	
 	
-	// Construtor:
+	//  Construtor:
 	public CartaSorte(int id, String descricao, int movimento, int efeito, float valor, String acao, int tempo, String restricao) {
 	this.id = id;
 	this.descricao = descricao;

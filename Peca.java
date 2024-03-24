@@ -6,7 +6,7 @@ public class Peca {
 	private int posicao;
 	
 	
-	// Construtor:
+	//  Construtor:
 	public Peca(String cor, int posicao) {
 		this.cor = cor;
 		this.posicao = posicao;
