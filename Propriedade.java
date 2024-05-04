@@ -1,5 +1,4 @@
-public class Propriedade {
-    private int id;
+public class Propriedade extends Carta{
     private String nome;
     private String proprietario;
     private int preco;
@@ -7,8 +6,8 @@ public class Propriedade {
 
 
     //Construtor
-    public Propriedade(int id, String nome, String proprietario, int preco, int aluguel) {
-        this.id = id;
+    public Propriedade(int id, String descricao, Jogador dono, String nome, String proprietario, int preco, int aluguel) {
+        super(id, descricao, dono);
         this.nome = nome;
         this.proprietario = proprietario;
         this.preco = preco;
@@ -21,13 +20,6 @@ public class Propriedade {
     }
     public void setNome(String novo_nome) {
         this.nome = novo_nome;
-    }
-
-    public int getId() {
-        return id;
-    }
-    public void setId(int novo_id) {
-        this.id = novo_id;
     }
 
     public String getProprietario() {

@@ -2,8 +2,8 @@ public class Servicospublicos extends Propriedade{
     private int dados;
 
     //Construtor;
-    public Servicospublicos(int dados, int id, String nome, String proprietario, int preco, int aluguel) {
-        super(id, nome, proprietario, preco, aluguel);
+    public Servicospublicos(int dados, int id, String descricao, Jogador dono, String nome, String proprietario, int preco, int aluguel) {
+        super(id, descricao, dono, nome, proprietario, preco, aluguel);
         this.dados = dados;
     }
 

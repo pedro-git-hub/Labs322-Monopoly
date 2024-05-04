@@ -2,9 +2,7 @@
 	Classe que define todas as instâncias e métodos
 	para a Carta da Sorte.
 */
-public class CartaSorte {
-	private int id;
-	private String descricao;
+public class CartaSorte extends Carta {
 	private int movimento;
 	private int efeito;
 	private float valor;
@@ -14,9 +12,8 @@ public class CartaSorte {
 	
 	
 	//  Construtor:
-	public CartaSorte(int id, String descricao, int movimento, int efeito, float valor, String acao, int tempo, String restricao) {
-	this.id = id;
-	this.descricao = descricao;
+	public CartaSorte(int id, String descricao, int movimento, int efeito, float valor, String acao, int tempo, String restricao, Jogador dono) {
+	super(id, descricao, dono);
 	this.movimento = movimento;
 	this.efeito = efeito;
 	this.valor = valor;
@@ -27,20 +24,6 @@ public class CartaSorte {
 	
 	
 	// Getters e Setters:
-	public int getId() {
-		return id;
-	}
-	public void setId(int novo_id) {
-		this.id = novo_id;
-	}
-	
-	public String getDescricao() {
-		return descricao;
-	}
-	public void setDescricao(String nova_descricao){
-		this.descricao = nova_descricao;
-	}
-	
 	public int getMovimento() {
 		return movimento;
 	}

@@ -6,9 +6,9 @@ public class Terreno extends Propriedade{
 
 
     // Construtor super
-    public Terreno(int id, String nome, String proprietario, int preco, int aluguel, int numeroCasas,
+    public Terreno(int id, String descricao, Jogador dono, String nome, String proprietario, int preco, int aluguel, int numeroCasas,
     int valorCasa, int valorHotel, boolean hotel) {
-        super(id, nome, proprietario, preco, aluguel);
+        super(id, descricao, dono, nome, proprietario, preco, aluguel);
         this.numeroCasas = numeroCasas;
         this.valorCasa = valorCasa;
         this.valorHotel = valorHotel;
