@@ -66,3 +66,4 @@ public class CartaSorte extends Carta {
 		this.restricao = nova_restricao;
 	}
 }
+//

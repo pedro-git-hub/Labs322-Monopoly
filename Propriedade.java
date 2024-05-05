@@ -47,3 +47,4 @@ public class Propriedade extends Carta{
         return aluguel;
     }
 }
+//

@@ -81,6 +81,10 @@ public class Jogador {
     // Não adicionei o setter porque o enunciado pede pro ID ser settado automaticamente
     //Imagino que ele não deve ser alterado
 
+    public ArrayList<Carta> getCartas() {
+        return cartas;
+    }
+
     public void addCarta(Carta nova_carta) {
         cartas.add(nova_carta);
         nova_carta.setDono(this);
@@ -101,3 +105,4 @@ public class Jogador {
         return "Jogador de nome " + getNome() + ", de CPF " + getCpf() + " e email " + getEmail() + ".";
     }
 }
+//
